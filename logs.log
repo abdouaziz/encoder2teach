@@ -1,0 +1,296 @@
+2023-04-17 08:54:53 - modeling.py - __main__ - INFO - Starting
+2023-04-17 08:54:54 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:54:55 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 08:54:55 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 08:54:56 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 08:54:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:54:56 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 08:54:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:54:58 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 08:54:58 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:54:59 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 08:54:59 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 08:54:59 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 08:54:59 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 08:54:59 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:55:02 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 08:55:02 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:55:42 - _http.py - huggingface_hub.utils._http - WARNING - 'HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fef94414d30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))' thrown while requesting HEAD https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json
+2023-04-17 08:55:42 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:31 - modeling.py - __main__ - INFO - Starting
+2023-04-17 08:56:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 08:56:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 08:56:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:36 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 08:56:36 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 08:56:36 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 08:56:36 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 08:56:36 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:37 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 08:56:37 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:37 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 08:56:37 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 08:56:39 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 08:56:39 - modeling.py - __main__ - INFO - Data loader created
+2023-04-17 08:57:25 - modeling.py - __main__ - INFO - Batch created
+2023-04-17 08:57:45 - modeling.py - __main__ - INFO - Done
+2023-04-17 09:17:22 - modeling.py - __main__ - INFO - Starting
+2023-04-17 09:17:22 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:23 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:17:23 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:17:24 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:17:24 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:25 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:17:25 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:27 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:17:27 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:31 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:17:31 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:17:32 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:17:32 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:17:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:17:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:17:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:17:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:17:33 - modeling.py - __main__ - INFO - Data loader created
+2023-04-17 09:18:08 - modeling.py - __main__ - INFO - Batch created
+2023-04-17 09:18:23 - modeling.py - __main__ - INFO - Done
+2023-04-17 09:29:38 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:38 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:29:38 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:29:38 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:29:38 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:39 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:29:39 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:40 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:29:40 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:41 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:29:41 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:29:41 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:29:41 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:29:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:42 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:29:42 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:43 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:29:43 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:44 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:29:44 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:29:44 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:30:17 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:18 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:30:18 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:30:18 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:30:18 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:30:21 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:30:21 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:30:21 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:30:21 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:30:22 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:30:23 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:31:19 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:20 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:31:20 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:31:20 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:31:20 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:21 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:31:21 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:21 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:31:21 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:25 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:31:25 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:31:26 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:31:26 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:31:26 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:26 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:31:26 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:27 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:31:27 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:28 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:31:28 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:31:29 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:32:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:34 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:32:34 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:32:34 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:32:34 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:35 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:32:35 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:36 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:32:36 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:36 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:32:36 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:32:36 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:32:36 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:32:36 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:37 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:32:37 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:37 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:32:37 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:39 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:32:39 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:32:40 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:56:37 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:38 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:56:38 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:56:38 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:56:38 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:39 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:56:39 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:40 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:56:40 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:40 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:56:40 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:56:40 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:56:40 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:56:40 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:56:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:56:42 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:57:53 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:53 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:57:54 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:57:54 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:57:54 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:54 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:57:54 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:55 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:57:55 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:55 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:57:55 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:57:55 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:57:55 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:57:55 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:56 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:57:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:56 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:57:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:57 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:57:57 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:57:58 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:58:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:31 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:58:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:58:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:58:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 09:58:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:34 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 09:58:34 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:34 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 09:58:34 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:58:34 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 09:58:34 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 09:58:34 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:39 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:58:39 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:40 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 09:58:40 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:43 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 09:58:43 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:58:44 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 09:59:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 09:59:56 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 09:59:56 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 09:59:59 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 09:59:59 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:00 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 10:00:00 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:00 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 10:00:00 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:01 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 10:00:01 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:00:01 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 10:00:01 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:00:01 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:01 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:00:01 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:04 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:00:04 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:05 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 10:00:05 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:00:05 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 10:01:28 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:28 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 10:01:28 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 10:01:29 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 10:01:29 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:29 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 10:01:29 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:31 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 10:01:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 10:01:32 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:01:32 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 10:01:32 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:01:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:01:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:01:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 10:01:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:01:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 10:02:29 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:30 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 10:02:30 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 10:02:30 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 10:02:30 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:31 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 10:02:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:31 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 10:02:31 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:32 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 10:02:32 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:02:32 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 10:02:32 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:02:32 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 10:02:33 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:02:34 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-17 10:14:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:41 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/patrickvonplaten/librispeech_asr_dummy HTTP/1.1" 200 1649
+2023-04-17 10:14:41 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/patrickvonplaten/librispeech_asr_dummy/patrickvonplaten/librispeech_asr_dummy.py HTTP/1.1" 404 0
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/librispeech_asr_dummy.py HTTP/1.1" 200 0
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-17 10:14:43 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:44 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/patrickvonplaten/librispeech_asr_dummy/resolve/main/README.md HTTP/1.1" 404 0
+2023-04-17 10:14:44 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:14:44 - builder.py - datasets.builder - WARNING - Found cached dataset librispeech_asr_dummy (/Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc)
+2023-04-17 10:14:44 - local.py - fsspec.local - DEBUG - open file: /Users/modoudiakhate/.cache/huggingface/datasets/patrickvonplaten___librispeech_asr_dummy/clean/2.1.0/f2c70a4d03ab4410954901bde48c54b85ca1b7f9bf7d616e7e2a72b5ee6ddbfc/dataset_info.json
+2023-04-17 10:14:44 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:46 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:14:46 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:47 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-04-17 10:14:47 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:47 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-17 10:14:47 - connectionpool.py - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-04-17 10:14:48 - connectionpool.py - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
