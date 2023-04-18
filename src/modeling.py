@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from transformers import AutoTokenizer, BertForPreTraining , BertConfig , Wav2Vec2FeatureExtractor
-from transformers import Wav2Vec2Config, Wav2Vec2Model
+from transformers import Wav2Vec2Config, Wav2Vec2Model , BertModel
 
 from datasets import load_dataset
 import logging
@@ -101,9 +101,10 @@ class CustomDataLoader(DataLoader):
 
 
 class BertTeacherModel(nn.Module):
-    def __init__(self , model_name):
+    def __init__(self , model_name ):
         super(BertTeacherModel,self).__init__()
-        self.model = BertForPreTraining.from_pretrained(model_name)
+        self.model = BertModel.from_pretrained(model_name)
+ 
 
     def forward(self, input_ids, attention_mask):
         return self.model(input_ids, attention_mask)
@@ -119,28 +120,32 @@ class Wav2Vec2StudentModel(nn.Module):
 
 
 class Model(nn.Module):
-    def __init__(self, bert_teacher_model , wav2vec2_student_model):
+    def __init__(self,  model_name="bert-base-uncased" , config = Wav2Vec2Config()):
         super(Model ,self).__init__()
-        self.bert_teacher_model = bert_teacher_model
-        self.wav2vec2_student_model = wav2vec2_student_model
+        self.bert_teacher_model = BertTeacherModel(model_name)
+        self.wav2vec2_student_model = Wav2Vec2StudentModel(config)
+        # set the output of the model [batch_size , seq_len , hidden_size] of the teacher model to the input of the student model
+
+
 
     def forward(self, text_input_ids, text_attention_mask, audio_input_values, audio_attention_mask):
-        teacher_output = self.bert_teacher_model(text_input_ids, text_attention_mask)
-        student_output = self.wav2vec2_student_model(audio_input_values, audio_attention_mask)
+        teacher_output = self.bert_teacher_model(text_input_ids, text_attention_mask).last_hidden_state
+        student_output = self.wav2vec2_student_model(audio_input_values, audio_attention_mask).last_hidden_state
+       
         return teacher_output, student_output
     
 
-    
+
 
 if __name__ == "__main__":
-    data_loader = CustomDataLoader()
-    bert_teacher_model = BertTeacherModel("bert-base-uncased")
-    wav2vec2_student_model = Wav2Vec2StudentModel(Wav2Vec2Config())
-    model = Model(bert_teacher_model , wav2vec2_student_model)
+    data_loader = CustomDataLoader(batch_size=8)
+    # bert_teacher_model = BertTeacherModel("bert-base-uncased")
+    # wav2vec2_student_model = Wav2Vec2StudentModel(Wav2Vec2Config())
+    model = Model()
     for batch in data_loader:
         teacher_output, student_output = model(**batch)  
-        print(f"teacher_output: {teacher_output.prediction_logits.shape}")
-        print(f"student_output: {student_output.last_hidden_state.shape}")
+        print(f"teacher_output: {teacher_output.shape}")
+        print(f"student_output: {student_output.shape}")
         break
 
 
