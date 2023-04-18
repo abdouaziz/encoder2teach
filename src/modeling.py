@@ -124,8 +124,7 @@ class Model(nn.Module):
         super(Model, self).__init__()
         self.bert_teacher_model = BertTeacherModel(model_name)
         self.wav2vec2_student_model = Wav2Vec2StudentModel(config)
-        # set the output of the model [batch_size , seq_len , hidden_size] of the teacher model to the input of the student model
-
+   
     def forward(
         self,
         text_input_ids,
