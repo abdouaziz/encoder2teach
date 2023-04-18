@@ -149,34 +149,57 @@ class Model(nn.Module):
 
 
 class Trainer:
-    def __init__(self, model, data_loader, optimizer, loss_fn, device):
-        self.model = model
-        self.data_loader = data_loader
-        self.optimizer = optimizer
-        self.loss_fn = loss_fn
-        self.device = device
+    def __init__(self, model_name , dataset_name , batch_size ,epocs , learning_rate ,):
+        self.model_name = model_name
+        self.dataset_name = dataset_name
+        self.batch_size = batch_size
+        self.epocs = epocs
+        self.learning_rate = learning_rate
+        self.model = Model(model_name)
+        self.data_loader = CustomDataLoader(
+            dataset_name, batch_size=batch_size, dataset_split="validation"
+        )
+        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
+        self.loss = F.cosine_similarity()
 
     def train(self):
-        for batch in tqdm(self.data_loader):
-            teacher_output, student_output = self.model(**batch)
-            loss = self.loss_fn(teacher_output, student_output)
-            loss.backward()
-            self.optimizer.step()
-            self.optimizer.zero_grad()
-            break
+        for epoch in range(self.epocs):
+            for batch in tqdm(self.data_loader):
+                self.optimizer.zero_grad()
+                teacher_output, student_output = self.model(
+                    batch["text_input_ids"],
+                    batch["text_attention_mask"],
+                    batch["audio_input_values"],
+                    batch["audio_attention_mask"],
+                )
+                loss = self.loss(teacher_output, student_output)
+                loss.backward()
+                self.optimizer.step()
+                logger.info(f"Epoch: {epoch} - Loss: {loss}")
 
-    def evaluate(self):
-        pass
+    def save(self, path):
+        torch.save(self.model.state_dict(), path)
+    
+    def load(self, path):
+        self.model.load_state_dict(torch.load(path))
 
-    def predict(self):
-        pass
 
 
 if __name__ == "__main__":
-    model = Model()
-    data_loader = CustomDataLoader()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
-    loss_fn = nn.MSELoss()
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    trainer = Trainer(model, data_loader, optimizer, loss_fn, device)
+    # Initialize Trainer
+    trainer = Trainer(
+        model_name="bert-base-uncased",
+        dataset_name="patrickvonplaten/librispeech_asr_dummy",
+        batch_size=4,
+        epocs=1,
+        learning_rate=2e-5,
+    )
+
+    # Train Model
     trainer.train()
+
+    # Save Model
+    trainer.save("model.pt")
+
+
+ 
