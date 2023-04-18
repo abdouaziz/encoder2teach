@@ -1,10 +1,3 @@
-from torch import Tensor
-from typing import Optional, Tuple
-
-import numpy as np
-import math
-
-from dataclasses import dataclass
 import torch
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
@@ -12,15 +5,13 @@ import torch.nn.functional as F
 
 from transformers import (
     AutoTokenizer,
-    BertForPreTraining,
-    BertConfig,
     Wav2Vec2FeatureExtractor,
 )
 from transformers import Wav2Vec2Config, Wav2Vec2Model, BertModel
 
 from datasets import load_dataset
 import logging
-
+import wandb
 from tqdm import tqdm
 
 
@@ -132,12 +123,8 @@ class Model(nn.Module):
         audio_input_values,
         audio_attention_mask,
     ):
-        teacher_output = self.bert_teacher_model(
-            text_input_ids, text_attention_mask
-        ).last_hidden_state
-        student_output = self.wav2vec2_student_model(
-            audio_input_values, audio_attention_mask
-        ).last_hidden_state
+        teacher_output = self.bert_teacher_model(text_input_ids, text_attention_mask).last_hidden_state
+        student_output = self.wav2vec2_student_model(audio_input_values, audio_attention_mask).last_hidden_state
 
         student_output = student_output.permute(0, 2, 1)
         student_output = nn.Linear(student_output.shape[2], teacher_output.shape[1])(
@@ -149,22 +136,25 @@ class Model(nn.Module):
 
 
 class Trainer:
-    def __init__(self, model_name , dataset_name , batch_size ,epocs , learning_rate ,):
+    def __init__(self, model_name , dataset_name , batch_size ,epocs , learning_rate ,report_to =True):
         self.model_name = model_name
         self.dataset_name = dataset_name
         self.batch_size = batch_size
         self.epocs = epocs
         self.learning_rate = learning_rate
+        self.report_to = report_to
         self.model = Model(model_name)
         self.data_loader = CustomDataLoader(
             dataset_name, batch_size=batch_size, dataset_split="validation"
         )
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
-        self.loss = F.cosine_similarity()
 
     def train(self):
+
+        logger.info("Training Started")
+
         for epoch in range(self.epocs):
-            for batch in tqdm(self.data_loader):
+            for i, batch in enumerate(tqdm(self.data_loader)):
                 self.optimizer.zero_grad()
                 teacher_output, student_output = self.model(
                     batch["text_input_ids"],
@@ -172,16 +162,29 @@ class Trainer:
                     batch["audio_input_values"],
                     batch["audio_attention_mask"],
                 )
-                loss = self.loss(teacher_output, student_output)
+                loss = self.loss_fn(teacher_output, student_output)
                 loss.backward()
+                 
+                if self.report_to:
+                    self.report()
+                    wandb.log({"loss": loss.item()})
+
                 self.optimizer.step()
-                logger.info(f"Epoch: {epoch} - Loss: {loss}")
+                logger.info(f"Epoch: {epoch} - Loss: {loss.item()}")
+                print(f"Epoch: {epoch} - Loss: {loss.item()}")
+
+    def loss_fn(self, x, y):
+        return F.cosine_similarity(x, y).abs().mean()
 
     def save(self, path):
         torch.save(self.model.state_dict(), path)
     
     def load(self, path):
         self.model.load_state_dict(torch.load(path))
+
+    def report(self):
+        wandb.init(project="LLMTeaching ", entity="model")
+        wandb.watch(self.model)
 
 
 
@@ -193,6 +196,7 @@ if __name__ == "__main__":
         batch_size=4,
         epocs=1,
         learning_rate=2e-5,
+        report_to=False,
     )
 
     # Train Model
@@ -200,6 +204,3 @@ if __name__ == "__main__":
 
     # Save Model
     trainer.save("model.pt")
-
-
- 
